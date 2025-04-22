@@ -30,7 +30,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		26D64AC62DB6A722004F65D8 /* Exceptions for "Life-Counter" folder in "Life-Counter" target */ = {
+		269139652DB8395D0026F958 /* Exceptions for "Life-Counter" folder in "Life-Counter" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -43,7 +43,7 @@
 		26D64AA02DB6A720004F65D8 /* Life-Counter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				26D64AC62DB6A722004F65D8 /* Exceptions for "Life-Counter" folder in "Life-Counter" target */,
+				269139652DB8395D0026F958 /* Exceptions for "Life-Counter" folder in "Life-Counter" target */,
 			);
 			path = "Life-Counter";
 			sourceTree = "<group>";
@@ -291,6 +291,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Life-Counter/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Life Counter";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -318,6 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Life-Counter/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Life Counter";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
