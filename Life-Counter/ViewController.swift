@@ -17,6 +17,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var HealthPointsTwo: UILabel!
     
     @IBOutlet weak var ResultLabel: UILabel!
+    
+    @IBOutlet weak var customInputOne: UITextField!
+    @IBOutlet weak var customInputTwo: UITextField!
+    
+    
 
     var player1Life = 20
     var player2Life = 20
@@ -24,6 +29,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        
+        customInputOne.text = ""
+        customInputTwo.text = ""
     }
 
     @IBAction func player1ButtonTapped(_ sender: UIButton) {
@@ -32,6 +40,30 @@ class ViewController: UIViewController {
 
     @IBAction func player2ButtonTapped(_ sender: UIButton) {
         adjustLife(for: 2, using: sender)
+    }
+    
+    @IBAction func player1CustomAddTapped(_ sender: UIButton) {
+        let value = Int(customInputOne.text ?? "") ?? 0
+        player1Life += value
+        updateUI()
+    }
+
+    @IBAction func player1CustomSubtractTapped(_ sender: UIButton) {
+        let value = Int(customInputOne.text ?? "") ?? 0
+        player1Life -= value
+        updateUI()
+    }
+
+    @IBAction func player2CustomAddTapped(_ sender: UIButton) {
+        let value = Int(customInputTwo.text ?? "") ?? 0
+        player2Life += value
+        updateUI()
+    }
+
+    @IBAction func player2CustomSubtractTapped(_ sender: UIButton) {
+        let value = Int(customInputTwo.text ?? "") ?? 0
+        player2Life -= value
+        updateUI()
     }
 
     // MARK: - Logic
@@ -42,8 +74,6 @@ class ViewController: UIViewController {
         switch change {
         case "+": amount = 1
         case "-": amount = -1
-        case "+5": amount = 5
-        case "-5": amount = -5
         default: amount = 0
         }
 
@@ -55,6 +85,7 @@ class ViewController: UIViewController {
 
         updateUI()
     }
+
 
     func updateUI() {
         HealthPointsOne.text = "\(player1Life)"

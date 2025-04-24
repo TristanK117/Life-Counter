@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,29 +13,29 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Life_Counter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="lB1-GT-fN6">
-                                <rect key="frame" x="79" y="79" width="694" height="306"/>
+                                <rect key="frame" x="20" y="137.99999999999997" width="353" height="500.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FsE-d7-cKw" customClass="Horizontal">
-                                        <rect key="frame" x="0.0" y="0.0" width="322" height="306"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="151.66666666666666" height="500.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjZ-Ia-B09">
-                                                <rect key="frame" x="0.0" y="0.0" width="322" height="34.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="151.66666666666666" height="54.333333333333336"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP: 20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcU-D2-hxy">
-                                                <rect key="frame" x="0.0" y="54.333333333333343" width="322" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="74.333333333333343" width="151.66666666666666" height="54.333333333333343"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUU-8B-1Mh">
-                                                <rect key="frame" x="0.0" y="108.66666666666666" width="322" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="148.66666666666669" width="151.66666666666666" height="54.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="+"/>
                                                 <connections>
@@ -43,48 +43,53 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhi-WP-Mok">
-                                                <rect key="frame" x="0.0" y="163" width="322" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="223" width="151.66666666666666" height="54.333333333333314"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="-"/>
                                                 <connections>
                                                     <action selector="player1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TZe-Pu-hR5"/>
                                                 </connections>
                                             </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Amount" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kma-7U-TmP">
+                                                <rect key="frame" x="0.0" y="297.33333333333331" width="151.66666666666666" height="54.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="795-wN-wrG">
-                                                <rect key="frame" x="0.0" y="217.33333333333331" width="322" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="371.66666666666669" width="151.66666666666666" height="54.333333333333314"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="+5"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Add Amount"/>
                                                 <connections>
-                                                    <action selector="player1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zny-sJ-ntc"/>
+                                                    <action selector="player1CustomAddTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Gc-D5-D3r"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H6F-rI-pQR">
-                                                <rect key="frame" x="0.0" y="271.66666666666669" width="322" height="34.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="446" width="151.66666666666666" height="54.333333333333314"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="-5"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Subtract Amount"/>
                                                 <connections>
-                                                    <action selector="player1ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NfO-Ds-bDb"/>
+                                                    <action selector="player1CustomSubtractTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mAl-ws-e3R"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="daX-7X-F51" customClass="Horizontal">
-                                        <rect key="frame" x="372" y="0.0" width="322" height="306"/>
+                                        <rect key="frame" x="201.66666666666663" y="0.0" width="151.33333333333337" height="500.33333333333331"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpj-OR-YUF">
-                                                <rect key="frame" x="0.0" y="0.0" width="322" height="34.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="54.333333333333336"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HP: 20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDO-hy-U09">
-                                                <rect key="frame" x="0.0" y="54.333333333333343" width="322" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="74.333333333333343" width="151.33333333333334" height="54.333333333333343"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sSB-Ae-wFB">
-                                                <rect key="frame" x="0.0" y="108.66666666666666" width="322" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="148.66666666666669" width="151.33333333333334" height="54.333333333333343"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="+"/>
                                                 <connections>
@@ -92,27 +97,32 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rmh-bl-TOi">
-                                                <rect key="frame" x="0.0" y="163" width="322" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="223" width="151.33333333333334" height="54.333333333333314"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="-"/>
                                                 <connections>
                                                     <action selector="player2ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPY-ZE-EgR"/>
                                                 </connections>
                                             </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Amount" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ul-wE-H6H">
+                                                <rect key="frame" x="0.0" y="297.33333333333331" width="151.33333333333334" height="54.333333333333314"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRK-tc-URL">
-                                                <rect key="frame" x="0.0" y="217.33333333333331" width="322" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="371.66666666666669" width="151.33333333333334" height="54.333333333333314"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="+5"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Add Amount"/>
                                                 <connections>
-                                                    <action selector="player2ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zhU-FT-yhw"/>
+                                                    <action selector="player2CustomAddTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9us-lI-fcl"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHo-wk-4gD">
-                                                <rect key="frame" x="0.0" y="271.66666666666669" width="322" height="34.333333333333314"/>
+                                                <rect key="frame" x="0.0" y="446" width="151.33333333333334" height="54.333333333333314"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="-5"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Subtract Amount"/>
                                                 <connections>
-                                                    <action selector="player2ButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nvq-yO-NKv"/>
+                                                    <action selector="player2CustomSubtractTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O2E-dC-hLS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -120,7 +130,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X LOSES!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfQ-ga-8uP">
-                                <rect key="frame" x="364.33333333333331" y="405" width="123.33333333333331" height="20.333333333333314"/>
+                                <rect key="frame" x="135" y="658.33333333333337" width="123.33333333333331" height="20.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -139,11 +149,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="HealthPointsOne" destination="IcU-D2-hxy" id="0zR-gw-gBc"/>
+                        <outlet property="HealthPointsOne" destination="IcU-D2-hxy" id="Qwu-v3-bh5"/>
                         <outlet property="HealthPointsTwo" destination="EDO-hy-U09" id="46m-hD-Vjh"/>
                         <outlet property="PlayerOne" destination="tjZ-Ia-B09" id="H7g-56-jZS"/>
                         <outlet property="PlayerTwo" destination="Zpj-OR-YUF" id="TBv-e7-tZE"/>
                         <outlet property="ResultLabel" destination="nfQ-ga-8uP" id="aOk-VW-VKS"/>
+                        <outlet property="customInputOne" destination="Kma-7U-TmP" id="IMV-v9-iLz"/>
+                        <outlet property="customInputTwo" destination="7Ul-wE-H6H" id="8Ea-3c-Mud"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
